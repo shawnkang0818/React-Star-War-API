@@ -10,7 +10,7 @@ const Ship = ({ship}) => {
           <button>useLocation</button>
         </Link>
 
-        <Link>
+        <Link to={`/ships/${ship.url.match(/\d+/)}`}>
           <button>NO useLocation</button>
         </Link>
       </div>
